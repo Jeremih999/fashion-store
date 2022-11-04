@@ -1,0 +1,505 @@
+/* ------------------ROOT VARIABLES --------------------------*/
+
+:root{
+    --color-primary : #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white : #fff;
+    --color-info-dark : #7d8da1;
+    --color-info-light:#dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-bg:#f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1:0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3:1.2rem;
+
+    --card-padding:1.8rem;
+    --padding-1:1.2rem;
+
+    --box-shadow : 0 2rem 3rem var(--color-light)
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    appearance: none;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.88rem;
+    background: var(--color-bg);
+    user-select: none;
+    overflow-x: hidden;
+}
+
+a{
+    color: var(--color-dark);
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.7rem;
+}
+
+.profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted{
+    color: var(--color-info-dark);
+}
+
+p{
+    color: var(--color-dark-variant);
+}
+
+b{
+    color: var(--color-dark);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.container{
+    width: 95%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-column-gap: 2rem;
+}
+
+.top{
+    margin: 5px 0px 50px 0px;
+}
+
+.side-bar{
+    height: 80vh;
+    position: relative;
+}
+
+.side-bar ul li a{
+    color: var(--color-dark-variant);
+    height: 3.7rem;
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 300ms ease;
+    align-items: center;
+    position: relative;
+}
+
+.last{
+    position: absolute;
+    bottom: 3rem;
+}
+
+.side-bar ul li a.active{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+.side-bar ul li a.active::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary-variant);
+}
+
+.side-bar ul li a:hover{
+    background: var(--color-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+.side-bar ul li a:hover::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary-variant);
+}
+
+main{
+    padding-bottom: 20px;
+}
+
+main .top p{
+   margin-top: 60px;
+}
+
+main .invoices{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .invoice{
+    background: var(--color-white);
+    width: 16rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 0.8rem;
+    border-radius: var(--card-border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .order{
+    margin-top: 5rem;
+}
+
+main .order h2{
+    margin-bottom: 1.5rem;
+}
+
+main table{
+    background: var(--color-white);
+    padding: 2rem 5rem;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+main .order p{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+table tr{
+    height: 3.7rem;
+}
+
+table tr td{
+    text-align: center;
+    border-bottom: 1px solid #0101016c;
+}
+
+.show-all:hover{
+    color: var(--color-dark);
+}
+
+section .top{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    text-align: right;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-bottom: 0%;
+    background: var(--color-bg);
+}
+
+section .top .admin-text{
+    display: block;
+    text-align: right;
+}
+
+section .top .profile-photo{
+    margin-left: 10px;
+    border: 2px solid var(--color-success);
+}
+
+.message-section{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    margin-top: 20px;
+    border-radius: var(--border-radius-2);
+}
+
+.message-person{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sales-analytic-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-white);
+    padding: var(--padding-1);
+    margin: 1rem 0 0 0;
+    border-radius: var(--border-radius-2);
+}
+
+.sale-analytics{
+    margin-top: 4rem;
+}
+
+.sale-analytics .add-product-btn{
+    padding: var(--padding-1);
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--border-radius-2);
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+
+.sale-analytics .add-product-btn:hover{
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/************************
+SIGN IN AND SIGN UP PAGES 
+************************/
+
+.signin-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-3);
+    margin-top: 10%;
+    box-shadow: var(--box-shadow);
+}
+
+.signup{
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-3);
+    margin-top: 5%;
+    box-shadow: var(--box-shadow);
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--padding-1);
+}
+
+.form-control input{
+    background: var(--color-bg);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+}
+
+.sign-submit{
+    width: 100%;
+    padding: var(--padding-1);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: var(--border-radius-1);
+}
+
+.signIn_info{
+    margin-top: 1rem;
+}
+
+/************************
+CUSTOMERS PAGE
+************************/
+
+#customers-container{
+    width: 95%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 2rem;
+}
+
+.customer table{
+    margin-top: 10%;
+    width: 100%;
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-2);
+}
+
+/************************
+ORDERS PAGE
+************************/
+
+#order-container{
+    width: 95%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    grid-column-gap: 2rem;
+}
+
+.orders .order table tr{
+   width: 100%;
+}
+
+.orders{
+    width: 100%;
+}
+
+.orders .order table tr td{
+    width: 9rem;
+ }
+
+ /************************
+analytics PAGE
+************************/
+
+ main #analytics{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+main #analytics #invoices{
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-3);
+    width: 100%;
+}
+
+
+#messages .message-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.edit-btn{
+    padding: 1rem 2rem;
+    background: #41f1b6;
+    border-radius: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.add{
+    background: #111e88;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.add:hover{
+    background-color: #5362d8;
+}
+
+#delete{
+    background-color: #ff7782;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-group.inline{
+    flex-direction: row;
+    align-items: center;
+}
+
+input, textarea, select{
+    padding: 0.8rem 1.4rem;
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-2);
+    color: var(--color-white);
+    resize: none;
+}
+
+.add-pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+input[type="radio"]{
+    display: block;
+    appearance: checkbox;
+}
+
+input[type="checkbox"]{
+    display: block;
+    appearance: checkbox;
+}
+
+.search__bar input::placeholder{
+    color: var(--color-gray-300);
+}
+
+#sub{
+    width: 50%;
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-3);
+    background-color: var(--color-success);
+    color: var(--color-white);
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container" id="order-container">
+        <aside>
+            <div class="top">
+                <h1>Fashion Store</h1>
+            </div>
+
+
+            <div class="side-bar">
+                <ul>
+                    <li > <a href="#" >Dashboard</a> </li>
+                    <li> <a href="customers.html">Customer</a></li>
+                    <li> <a href="orders.html" class="active">Orders</a></li>
+                    <li> <a href="analytics.html">Analytics</a></li>
+                    <li> <a href="messages.html">Messages</a></li>
+                    <li> <a href="products.html">Products</a></li>
+                    <li> <a href="category.html">categories</a></li>
+                    <li class="last"> <a href="#">Logout</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+
+        <main class="orders">
+            <div class="top">
+                <h1>Orders</h1>
+                <p class="text-muted">dd/mm/yyyy</p>
+            </div>
+            
+
+
+            <div class="order">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Price</th>
+                            <th>quantity</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th>activity</th>
+                        </tr>
+                    </thead>
+                    
+
+                    <tbody>
+                        <tr>
+                            <td><img src="../img/products/n6.jpg" alt=""></td>
+                            <td>Summer Sweatshirt</td>
+                            <td>203</td>
+                            <td>$45</td>
+                            <td>2</td>
+                            <td>due</td>
+                            <td class="warning">pending</td>
+                            <td>details</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/products/n1.jpg" alt=""></td>
+                            <td>Summer Sweatshirt</td>
+                            <td>203</td>
+                            <td>$45</td>
+                            <td>2</td>
+                            <td>due</td>
+                            <td class="danger">cancelled</td>
+                            <td>details</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/products/n3.jpg" alt=""></td>
+                            <td>Summer Sweatshirt</td>
+                            <td>203</td>
+                            <td>$45</td>
+                            <td>2</td>
+                            <td>due</td>
+                            <td class="warning">pending</td>
+                            <td>details</td>
+                        </tr>
+                        <tr>
+                            <td><img src="../img/products/n1.jpg" alt=""></td>
+                            <td>Summer Sweatshirt</td>
+                            <td>203</td>
+                            <td>$45</td>
+                            <td>2</td>
+                            <td>due</td>
+                            <td class="success">delivered</td>
+                            <td>details</td>
+                        </tr>
+                    </tbody>
+                   
+                </table>
+
+                <p class="text-muted show-all">Show All..</p>
+            </div>
+        </main>
+
+        <!-- <section>
+            <div class="top">
+                <div >
+                    <p class="text-muted">Hey, <span>Daniel</span></p>
+                    <p class="admin-text">admin</p>
+                </div>
+                
+                <div class="profile-photo">
+                    <img src="../images/avatar10.jpg" alt="" srcset="">
+                </div>
+            </div>
+
+
+            <div class="messages">
+                <h1>Recent Messages</h1>
+                <div class="message-section">
+                    <div class="message-person">
+                        <div class="profile-photo">
+                            <img src="../images/avatar4.jpg" alt="">
+                        </div>
+                        <div class="message-text">
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur vero dolor explicabo. Optio!</p>
+                        </div>
+                    </div>
+
+                    <div class="message-person">
+                        <div class="profile-photo">
+                            <img src="../images/avatar14.jpg" alt="">
+                        </div>
+                        <div class="message-text">
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur vero dolor explicabo. Optio!</p>
+                        </div>
+                    </div>
+
+                    <div class="message-person">
+                        <div class="profile-photo">
+                            <img src="../images/avatar6.jpg" alt="">
+                        </div>
+                        <div class="message-text">
+                            <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur vero dolor explicabo. Optio!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sale-analytics">
+                <h1>Sales Analytics </h1>
+
+                <div class="sales-analytic-box">
+                    <h3>ONLINE SALES <br> <small class="text-muted">Last 24 Hours</small> </h3>
+                     <p class="success">+36%</p>
+                     <b>3450</b>
+                </div>
+
+                <div class="sales-analytic-box">
+                    <h3>OFFLINE ORDERS <br> <small class="text-muted">Last 24 Hours</small> </h3>
+                     <p class="danger">+36%</p>
+                     <b>3450</b>
+                </div>
+
+                <div class="sales-analytic-box">
+                    <h3>NEW CUSTOMERS <br> <small class="text-muted">Last 24 Hours</small> </h3>
+                     <p class="success">+36%</p>
+                     <b>3450</b>
+                </div>
+
+                <button class="add-product-btn">
+                    Add Product
+                </button>
+            </div>
+        </section> -->
+    </div>
+</body>
+</html>
